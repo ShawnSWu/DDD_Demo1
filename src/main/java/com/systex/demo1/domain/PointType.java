@@ -8,7 +8,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 public class PointType {
-    private UUID typeID;
+    private UUID typeId;
     private String type;
     private String description;
 
