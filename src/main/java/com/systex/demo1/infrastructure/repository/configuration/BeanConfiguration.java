@@ -4,7 +4,7 @@ package com.systex.demo1.infrastructure.repository.configuration;
 import com.systex.demo1.domain.common.repository.PointTypeRepository;
 import com.systex.demo1.domain.common.service.PointTypeService;
 import com.systex.demo1.domain.common.service.PointTypeServiceImpl;
-import com.systex.demo1.infrastructure.repository.PointTypeMemRepository;
+import com.systex.demo1.infrastructure.repository.PointTypeDBRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -16,7 +16,8 @@ public class BeanConfiguration {
     }
     @Bean
     PointTypeRepository pointTypeRepository() {
-        return new PointTypeMemRepository();
+        //return new PointTypeMemRepository();
+        return new PointTypeDBRepository();
     }
 
 
